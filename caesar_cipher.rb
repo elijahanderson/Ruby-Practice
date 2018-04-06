@@ -3,6 +3,9 @@
               factor and then outputs the modified string:
 =end
 def caesar_cipher(s, shift)
+  # other loop methods :
+    # s.length.times do |i|
+    # for i in 0..(s.length-1)
   s.each_char do |i|
     # the shift fits within the limits (any case)
     if (s[i].ord >= 97 and s[i].ord + shift <= 122) or (s[i].ord >= 65 and s[i].ord + shift <= 90)
